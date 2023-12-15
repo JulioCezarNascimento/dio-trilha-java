@@ -12,8 +12,14 @@ public class ContaTerminal {
         int numero = sc.nextInt();
         sc.nextLine(); //Para consumir a quebra de linha
         //Obter pelo scaneer os valores digitados no terminal
-        
+        System.out.println("Por favor, digite o Nome do Cliente:");
+        String nomeCliente = sc.nextLine();
         //Exibir a mensagem conta criada
-    
+        System.out.println("Por favor, digite o Saldo:");
+        double saldo = sc.nextDouble();
+        System.out.println("Olá " + nomeCliente + ", obrigado por criar uma conta em nosso banco, sua agência é " + agencia +
+                ", conta " + numero + " e seu saldo " + saldo + " já está disponível para saque.");
+
+        sc.close();
     }
 }
